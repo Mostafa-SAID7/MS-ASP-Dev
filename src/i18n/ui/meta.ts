@@ -4,13 +4,13 @@
  */
 
 export const metaEN = {
-  title: "Mostafa Samir — Full-Stack Developer (.NET & React)",
+  title: "Mostafa Samir — Full-Stack Developer (.NET & Angular)",
   description:
-    "Full-Stack Software Developer with 4+ years of experience. .NET 8, ASP.NET Core, C#, React, TypeScript. Secure, scalable, high-performance applications.",
+    "Full-Stack Software Developer with 4+ years of experience. .NET 8, ASP.NET Core, C#, Angular, TypeScript. Secure, scalable, high-performance applications.",
 };
 
 export const metaAR = {
-  title: "مصطفى سمير — مطوّر Full-Stack ‎(.NET & React)‎",
+  title: "مصطفى سمير — مطوّر برمجيات Full-Stack ‎(.NET & Angular)‎",
   description:
-    "مطوّر برمجيات Full-Stack بخبرة تزيد على ٤ سنوات. ‎.NET 8‎ و ‎ASP.NET Core‎ و ‎C#‎ و ‎React‎ و ‎TypeScript‎. تطبيقات آمنة وقابلة للتوسع وعالية الأداء.",
+    "مطوّر برمجيات مصري Full-Stack بخبرة تزيد على ٤ سنوات في تطوير تطبيقات ويب آمنة وقابلة للتوسع. متخصّص في ‎.NET 8‎ و ‎ASP.NET Core‎ و ‎C#‎ و ‎Angular‎ و ‎TypeScript‎. مطور Angular مصري — مطور .NET Core — برمجة مواقع مصر — تطوير تطبيقات ويب احترافية.",
 };

@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { motion } from "framer-motion";
 import { Link } from "@tanstack/react-router";
 import { ArrowUpRight } from "lucide-react";
@@ -9,7 +10,7 @@ interface ProjectCardProps extends Omit<Project, "role" | "body"> {
   delay?: number;
 }
 
-export function ProjectCard({
+export const ProjectCard = memo(function ProjectCard({
   slug,
   category,
   name,
@@ -39,12 +40,10 @@ export function ProjectCard({
         />
 
         {/* Card body */}
-        <div className="flex flex-1 flex-col gap-3 p-5">
+        <div className="flex flex-1 flex-col gap-3 p-4 sm:p-5">
           {/* Category + year row */}
           <div className="flex items-center justify-between">
-            <span
-              className={`inline-flex rounded-full border border-border/50 bg-background/60 px-2.5 py-0.5 ${FONTS.labelXs} ${COLORS.textMuted}`}
-            >
+            <span className={COMPONENTS.categoryPill}>
               {category}
             </span>
             <span className={`${FONTS.labelXs} ${COLORS.textMuted}`}>{year}</span>
@@ -59,17 +58,14 @@ export function ProjectCard({
 
           {/* Technology tags */}
           {tags && tags.length > 0 && (
-            <div className="mt-2 flex flex-wrap gap-1">
+            <div className="mt-1 flex flex-wrap gap-1">
               {tags.slice(0, 3).map((tag: string) => (
-                <span
-                  key={tag}
-                  className="inline-flex rounded-full border border-border/40 bg-background/50 px-2 py-0.5 text-[10px] font-medium text-muted-foreground uppercase tracking-wider"
-                >
+                <span key={tag} className={COMPONENTS.tagChip}>
                   {tag}
                 </span>
               ))}
               {tags.length > 3 && (
-                <span className="inline-flex rounded-full border border-border/40 bg-background/50 px-2 py-0.5 text-[10px] font-medium text-muted-foreground">
+                <span className={COMPONENTS.tagChip}>
                   +{tags.length - 3}
                 </span>
               )}
@@ -83,7 +79,7 @@ export function ProjectCard({
 
           {/* Footer link */}
           <div
-            className={`mt-1 flex items-center gap-1 ${FONTS.labelXs} ${COLORS.textMuted} transition group-hover:${COLORS.textBase}`}
+            className={`mt-1 flex items-center gap-1 ${FONTS.labelXs} ${COLORS.textMuted} transition group-hover:text-foreground`}
           >
             View project
             <ArrowUpRight className="size-3 transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -92,4 +88,4 @@ export function ProjectCard({
       </Link>
     </motion.div>
   );
-}
+});

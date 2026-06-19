@@ -1,53 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+  IMPORTANT: Replace "https://mostafa-samir.dev" with your actual deployed domain
+  before submitting this sitemap to Google Search Console.
+-->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Home -->
+
+  <!-- Core pages -->
   <url>
-    <loc>/</loc>
-    <lastmod>2026-06-18</lastmod>
+    <loc>https://mostafa-samir.dev/</loc>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>
+    <loc>https://mostafa-samir.dev/pricing</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
 
   <!-- MVC Projects -->
-  <url><loc>/projects/portfolio-mvc</loc><lastmod>2026-06-18</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>/projects/professional-developer</loc><lastmod>2026-06-18</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>/projects/comunity-car</loc><lastmod>2026-06-18</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>/projects/marketing-mvc</loc><lastmod>2026-06-18</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>/projects/notebook</loc><lastmod>2026-06-18</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>/projects/courses-system</loc><lastmod>2026-06-18</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>/projects/ai-events</loc><lastmod>2026-06-18</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>/projects/blogging-agent</loc><lastmod>2026-06-18</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>/projects/voxtics</loc><lastmod>2026-06-18</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>/projects/hospital-management</loc><lastmod>2026-06-18</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://mostafa-samir.dev/projects/portfolio-mvc</loc><lastmod>2026-06-19</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://mostafa-samir.dev/projects/professional-developer</loc><lastmod>2026-06-19</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://mostafa-samir.dev/projects/comunity-car</loc><lastmod>2026-06-19</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://mostafa-samir.dev/projects/marketing-mvc</loc><lastmod>2026-06-19</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://mostafa-samir.dev/projects/notebook</loc><lastmod>2026-06-19</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://mostafa-samir.dev/projects/courses-system</loc><lastmod>2026-06-19</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://mostafa-samir.dev/projects/ai-events</loc><lastmod>2026-06-19</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://mostafa-samir.dev/projects/blogging-agent</loc><lastmod>2026-06-19</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://mostafa-samir.dev/projects/voxtics</loc><lastmod>2026-06-19</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://mostafa-samir.dev/projects/hospital-management</loc><lastmod>2026-06-19</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
 
   <!-- REST API Projects -->
-  <url><loc>/projects/dr-medicare-api</loc><lastmod>2026-06-18</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>/projects/cinemaverse-api</loc><lastmod>2026-06-18</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>/projects/bank-api</loc><lastmod>2026-06-18</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>/projects/restaurant-app-api</loc><lastmod>2026-06-18</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>/projects/market-api</loc><lastmod>2026-06-18</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>/projects/online-bookstore-api</loc><lastmod>2026-06-18</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>/projects/e-commerce-api</loc><lastmod>2026-06-18</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>/projects/inventory-api</loc><lastmod>2026-06-18</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>/projects/hblog-api</loc><lastmod>2026-06-18</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>/projects/versepress</loc><lastmod>2026-06-18</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>/projects/finance-api</loc><lastmod>2026-06-18</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>/projects/task-management-api</loc><lastmod>2026-06-18</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://mostafa-samir.dev/projects/dr-medicare-api</loc><lastmod>2026-06-19</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://mostafa-samir.dev/projects/cinemaverse-api</loc><lastmod>2026-06-19</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://mostafa-samir.dev/projects/bank-api</loc><lastmod>2026-06-19</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://mostafa-samir.dev/projects/restaurant-app-api</loc><lastmod>2026-06-19</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://mostafa-samir.dev/projects/market-api</loc><lastmod>2026-06-19</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://mostafa-samir.dev/projects/online-bookstore-api</loc><lastmod>2026-06-19</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://mostafa-samir.dev/projects/e-commerce-api</loc><lastmod>2026-06-19</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://mostafa-samir.dev/projects/inventory-api</loc><lastmod>2026-06-19</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://mostafa-samir.dev/projects/hblog-api</loc><lastmod>2026-06-19</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://mostafa-samir.dev/projects/versepress</loc><lastmod>2026-06-19</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://mostafa-samir.dev/projects/finance-api</loc><lastmod>2026-06-19</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://mostafa-samir.dev/projects/task-management-api</loc><lastmod>2026-06-19</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
 
   <!-- Microservices Projects -->
-  <url><loc>/projects/booking-microservices</loc><lastmod>2026-06-18</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>/projects/shop-microservices</loc><lastmod>2026-06-18</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>/projects/bank-microservices</loc><lastmod>2026-06-18</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>/projects/service-system-microservices</loc><lastmod>2026-06-18</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://mostafa-samir.dev/projects/booking-microservices</loc><lastmod>2026-06-19</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://mostafa-samir.dev/projects/shop-microservices</loc><lastmod>2026-06-19</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://mostafa-samir.dev/projects/bank-microservices</loc><lastmod>2026-06-19</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://mostafa-samir.dev/projects/service-system-microservices</loc><lastmod>2026-06-19</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
 
   <!-- Full Stack Projects -->
-  <url><loc>/projects/naar-noor</loc><lastmod>2026-06-18</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>/projects/luxelle-landing</loc><lastmod>2026-06-18</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>/projects/starbucks</loc><lastmod>2026-06-18</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>/projects/starbucks-connect</loc><lastmod>2026-06-18</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>/projects/job-tracking</loc><lastmod>2026-06-18</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>/projects/notes-fullstack</loc><lastmod>2026-06-18</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>/projects/erd-hospital-management</loc><lastmod>2026-06-18</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>/projects/roomcraft-fullstack</loc><lastmod>2026-06-18</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>/projects/quick-application1</loc><lastmod>2026-06-18</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://mostafa-samir.dev/projects/naar-noor</loc><lastmod>2026-06-19</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://mostafa-samir.dev/projects/luxelle-landing</loc><lastmod>2026-06-19</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://mostafa-samir.dev/projects/starbucks</loc><lastmod>2026-06-19</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://mostafa-samir.dev/projects/starbucks-connect</loc><lastmod>2026-06-19</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://mostafa-samir.dev/projects/job-tracking</loc><lastmod>2026-06-19</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://mostafa-samir.dev/projects/notes-fullstack</loc><lastmod>2026-06-19</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://mostafa-samir.dev/projects/erd-hospital-management</loc><lastmod>2026-06-19</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://mostafa-samir.dev/projects/roomcraft-fullstack</loc><lastmod>2026-06-19</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://mostafa-samir.dev/projects/quick-application1</loc><lastmod>2026-06-19</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+
 </urlset>

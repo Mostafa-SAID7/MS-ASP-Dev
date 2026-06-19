@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { ProjectCard } from "./ProjectCard";
 import { Project } from "./types";
 
@@ -5,7 +6,7 @@ interface ProjectGridProps {
   items: Project[];
 }
 
-export function ProjectGrid({ items }: ProjectGridProps) {
+export const ProjectGrid = memo(function ProjectGrid({ items }: ProjectGridProps) {
   return (
     <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
       {items.map((p, i) => (
@@ -23,4 +24,4 @@ export function ProjectGrid({ items }: ProjectGridProps) {
       ))}
     </div>
   );
-}
+});

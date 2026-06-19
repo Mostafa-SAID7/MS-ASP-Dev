@@ -8,6 +8,7 @@ export const onlineBoorstoreApiEN = {
   body: "A RESTful API for an online bookstore, covering catalogue browsing, cart, checkout, and order history. Built on ASP.NET Core with Clean Architecture and CQRS. EF Core manages SQL Server. Swagger documentation supports web and mobile frontends.",
   liveUrl: "http://online-bookstore-api.runasp.net",
   imageUrl: "/projects/api/online-bookstore-api.png",
+  tags: ["ASP.NET Core", "REST API", "CQRS", "SQL Server", "Clean Architecture"],
 };
 
 export const onlineBoorstoreApiAR = {
@@ -20,4 +21,5 @@ export const onlineBoorstoreApiAR = {
   body: "واجهة برمجية لمتجر كتب عبر الإنترنت، تغطي تصفح الكتالوج والسلة والدفع والسجل. مبنية على ASP.NET Core مع Clean Architecture وCQRS. يُدير EF Core SQL Server. توثيق Swagger يدعم الواجهات الأمامية للويب والهاتف.",
   liveUrl: "http://online-bookstore-api.runasp.net",
   imageUrl: "/projects/api/online-bookstore-api.png",
+  tags: ["ASP.NET Core", "REST API", "CQRS", "SQL Server", "Clean Architecture"],
 };

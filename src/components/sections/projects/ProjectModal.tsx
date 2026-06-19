@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import { Search, X } from "lucide-react";
-import { FONTS, COLORS, COMPONENTS } from "@/styles/theme";
+import { FONTS, COLORS, COMPONENTS, BORDERS } from "@/styles/theme";
 import { ProjectTable } from "./ProjectTable";
 import { ProjectFilter } from "./ProjectFilter";
 import { Project } from "./types";
@@ -23,16 +23,18 @@ export function ProjectModal({
   const [search, setSearch] = useState("");
   const [modalFilter, setModalFilter] = useState(allLabel);
 
-  const filteredItems = allItems.filter((p) => {
+  const filteredItems = useMemo(() => {
     const q = search.toLowerCase();
-    const catMatch = modalFilter === allLabel || p.category === modalFilter;
-    const textMatch =
-      !q ||
-      p.name.toLowerCase().includes(q) ||
-      p.category.toLowerCase().includes(q) ||
-      p.summary.toLowerCase().includes(q);
-    return catMatch && textMatch;
-  });
+    return allItems.filter((p) => {
+      const catMatch = modalFilter === allLabel || p.category === modalFilter;
+      const textMatch =
+        !q ||
+        p.name.toLowerCase().includes(q) ||
+        p.category.toLowerCase().includes(q) ||
+        p.summary.toLowerCase().includes(q);
+      return catMatch && textMatch;
+    });
+  }, [allItems, search, modalFilter, allLabel]);
 
   useEffect(() => {
     if (!isOpen) return;
@@ -50,7 +52,7 @@ export function ProjectModal({
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 md:p-6">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 md:p-6">
       {/* Backdrop */}
       <div
         className="fixed inset-0 bg-background/80 backdrop-blur-sm"
@@ -58,10 +60,10 @@ export function ProjectModal({
       />
 
       {/* Dialog */}
-      <div className="relative z-10 flex w-full max-w-5xl flex-col rounded-2xl border border-border bg-background shadow-2xl max-h-[90dvh]">
+      <div className={`relative z-10 flex w-full max-w-5xl flex-col ${BORDERS.rounded2xl} border border-border bg-background shadow-2xl max-h-[90dvh]`}>
 
         {/* ── Sticky header ── */}
-        <div className="flex flex-shrink-0 items-center justify-between border-b border-border px-6 py-5">
+        <div className="flex flex-shrink-0 items-center justify-between border-b border-border px-4 sm:px-6 py-4 sm:py-5">
           <div>
             <h2 className={FONTS.displaySm}>All Projects</h2>
             <p className={`mt-0.5 ${FONTS.labelXs} ${COLORS.textMuted}`}>
@@ -79,7 +81,7 @@ export function ProjectModal({
         </div>
 
         {/* ── Sticky search + filter ── */}
-        <div className="flex flex-shrink-0 flex-col gap-3 border-b border-border px-6 py-4 md:flex-row md:items-center">
+        <div className="flex flex-shrink-0 flex-col gap-3 border-b border-border px-4 sm:px-6 py-4 md:flex-row md:items-center">
           <div className="relative flex-1">
             <Search className="pointer-events-none absolute start-3 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
             <input
@@ -87,7 +89,7 @@ export function ProjectModal({
               placeholder="Search by name, category, or description…"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              className={`w-full rounded-lg border border-border bg-card/50 ps-9 pe-4 py-2.5 ${FONTS.bodySm} outline-none transition focus:border-foreground`}
+              className={`w-full ${BORDERS.roundedLg} border border-border bg-card/50 ps-9 pe-4 py-2.5 ${FONTS.bodySm} outline-none transition focus:border-foreground`}
             />
           </div>
           <div className="flex flex-wrap gap-2">
@@ -105,7 +107,7 @@ export function ProjectModal({
         </div>
 
         {/* ── Sticky footer ── */}
-        <div className="flex flex-shrink-0 items-center justify-between border-t border-border px-6 py-3">
+        <div className="flex flex-shrink-0 items-center justify-between border-t border-border px-4 sm:px-6 py-3">
           <span className={`${FONTS.labelXs} ${COLORS.textMuted}`}>
             {filteredItems.length} of {allItems.length} project
             {allItems.length !== 1 ? "s" : ""}
@@ -117,7 +119,7 @@ export function ProjectModal({
                 setSearch("");
                 setModalFilter(allLabel);
               }}
-              className={`${FONTS.labelXs} ${COLORS.textMuted} underline underline-offset-2 transition hover:${COLORS.textBase}`}
+              className={`${FONTS.labelXs} ${COLORS.textMuted} underline underline-offset-2 transition hover:text-foreground`}
             >
               Clear filters
             </button>

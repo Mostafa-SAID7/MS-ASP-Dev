@@ -6,6 +6,7 @@ export const drMedicareApiEN = {
   year: "2024",
   role: "Backend Engineer",
   body: "A RESTful API for medical appointment booking, built on ASP.NET Core with Clean Architecture and CQRS via MediatR. EF Core manages SQL Server data. Swagger/OpenAPI provides interactive documentation. Covers patient profiles, doctor availability, and appointment workflows.",
+  tags: ["ASP.NET Core", "REST API", "CQRS", "MediatR", "Clean Architecture"],
   liveUrl: "https://dr-medicare.runasp.net",
   imageUrl: "/projects/api/Dr-MediCare-API.png",
 };
@@ -18,6 +19,7 @@ export const drMedicareApiAR = {
   year: "٢٠٢٤",
   role: "مهندس Backend",
   body: "واجهة برمجية للتطبيقات RESTful لحجز المواعيد الطبية، مبنية على ASP.NET Core مع Clean Architecture وCQRS عبر MediatR. يُدير EF Core بيانات SQL Server. توفّر Swagger/OpenAPI توثيقاً تفاعلياً. تغطي ملفات المرضى وتوفر الأطباء وسير العمل للمواعيد.",
+  tags: ["ASP.NET Core", "REST API", "CQRS", "MediatR", "Clean Architecture"],
   liveUrl: "https://dr-medicare.runasp.net",
   imageUrl: "/projects/api/Dr-MediCare-API.png",
 };

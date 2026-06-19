@@ -25,7 +25,7 @@ export function About() {
         </div>
       </div>
 
-      <div className={`mt-20 grid grid-cols-1 gap-px overflow-hidden ${BORDERS.rounded2xl} ${BORDERS.borderBase} md:grid-cols-3`}>
+      <div className={`mt-10 grid grid-cols-1 gap-px overflow-hidden ${BORDERS.rounded2xl} ${BORDERS.borderBase} md:grid-cols-3`}>
         {t.about.stats.map((s) => (
           <div key={s.label} className={`bg-card ${SPACING.cardPadding}`}>
             <div className={COMPONENTS.statBadge}>

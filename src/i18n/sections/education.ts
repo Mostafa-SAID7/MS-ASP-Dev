@@ -17,7 +17,7 @@ export const educationEN = {
 
 export const educationAR = {
   eyebrow: "التعليم",
-  title: "الأساسات.",
+  title: "الأساس.",
   items: [
     {
       period: "٢٠٢١",

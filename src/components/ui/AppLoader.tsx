@@ -72,7 +72,7 @@ export function AppLoader() {
             transition={{ delay: 0.8, duration: 0.4 }}
             className="mt-2 font-accent text-[10px] uppercase tracking-[0.3em] text-muted-foreground/50 select-none"
           >
-            Full-Stack .NET &amp; React Developer
+            Full-Stack .NET &amp; Angular Developer
           </motion.p>
 
           {/* Progress bar — sweeps left to right */}

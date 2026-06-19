@@ -14,12 +14,18 @@
     <meta name="author" content="Mostafa Samir" />
     <meta
       name="keywords"
-      content="Mostafa Samir, Full-Stack Developer, .NET 8, ASP.NET Core, C#, Angular, TypeScript, SQL Server, Microservices, Egypt, software engineer, backend, frontend"
+      content="Mostafa Samir, Full-Stack Developer, .NET 8, ASP.NET Core, C#, Angular, TypeScript, SQL Server, Microservices, Egypt, software engineer, backend, frontend, مطور برمجيات, مطور Angular, مطور .NET"
     />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
     <meta name="format-detection" content="telephone=no" />
     <meta name="theme-color" content="#1c1a18" media="(prefers-color-scheme: dark)" />
     <meta name="theme-color" content="#f5f4f0" media="(prefers-color-scheme: light)" />
+
+    <!-- ── Canonical ──
+         Update this URL once the site is live on its permanent domain.
+         A canonical tag tells search engines the authoritative URL for this page.
+    -->
+    <link rel="canonical" href="https://mostafa-samir.dev" />
 
     <!-- ── Open Graph ── -->
     <meta property="og:type" content="website" />
@@ -29,9 +35,9 @@
       property="og:description"
       content="Full-Stack Software Developer with 4+ years building secure, scalable .NET 8 and Angular/TypeScript applications. Based in Tanta, Egypt — working globally."
     />
-    <meta property="og:url" content="/" />
-    <meta property="og:image" content="/MS.jpg" />
-    <meta property="og:image:alt" content="Mostafa Samir — Full-Stack Developer" />
+    <meta property="og:url" content="https://mostafa-samir.dev" />
+    <meta property="og:image" content="https://mostafa-samir.dev/MS.jpg" />
+    <meta property="og:image:alt" content="Mostafa Samir — Full-Stack .NET &amp; Angular Developer" />
     <meta property="og:image:width" content="800" />
     <meta property="og:image:height" content="1000" />
     <meta property="og:locale" content="en_US" />
@@ -44,30 +50,43 @@
       name="twitter:description"
       content="Full-Stack Software Developer with 4+ years building secure, scalable .NET 8 and Angular/TypeScript applications."
     />
-    <meta name="twitter:image" content="/MS.jpg" />
-    <meta name="twitter:image:alt" content="Mostafa Samir — Full-Stack Developer" />
+    <meta name="twitter:image" content="https://mostafa-samir.dev/MS.jpg" />
+    <meta name="twitter:image:alt" content="Mostafa Samir — Full-Stack .NET &amp; Angular Developer" />
+    <meta name="twitter:creator" content="@mostafasamir" />
 
-    <!-- ── Person structured data ── -->
+    <!-- ── Person structured data (JSON-LD) ── -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Mostafa Samir",
+        "alternateName": "مصطفى سمير",
         "jobTitle": "Full-Stack Software Developer",
-        "description": "Full-Stack Software Developer specialising in .NET 8 and Angular/TypeScript. Based in Tanta, Egypt.",
-        "url": "/",
+        "description": "Full-Stack Software Developer specialising in .NET 8, ASP.NET Core, C#, and Angular/TypeScript. Based in Tanta, Egypt — working globally.",
+        "url": "https://mostafa-samir.dev",
         "email": "m.ssaid356@gmail.com",
         "telephone": "+201067358073",
+        "image": "https://mostafa-samir.dev/MS.jpg",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Tanta",
+          "addressRegion": "Gharbia",
           "addressCountry": "EG"
         },
-        "knowsAbout": [".NET 8", "ASP.NET Core", "C#", "Angular", "TypeScript", "SQL Server", "Microservices"],
+        "knowsAbout": [
+          ".NET 8", "ASP.NET Core", "C#", "Angular", "TypeScript",
+          "SQL Server", "Microservices", "EF Core", "REST API",
+          "Docker", "Kubernetes", "Azure DevOps"
+        ],
+        "knowsLanguage": ["en", "ar"],
         "sameAs": [
           "https://github.com/Mostafa-SAID7",
           "https://www.linkedin.com/in/mostafasamirsaid"
-        ]
+        ],
+        "worksFor": {
+          "@type": "Organization",
+          "name": "WE3DS Company"
+        }
       }
     </script>
 
@@ -101,21 +120,18 @@
 
     <!--
       ── Font Loading Strategy ──
-      Using Google Fonts API with font-display=block to prevent FOUT:
-      - block: Browser waits up to 3s for custom font, shows fallback after
-      - Prevents flashing between system fonts and custom fonts
-      - Preconnect ensures faster delivery to Google's servers
-      Fonts are loaded together through Google API (single request):
-      - EN: Geo (headings), Homenaje (body), Work Sans (UI)
-      - AR: Cairo (all text), Work Sans (UI)
-      The API handles all @font-face declarations and URL management dynamically.
+      EN: Geo (headings), Homenaje (body/labels), Work Sans (UI)
+      AR: Cairo (all text, self-hosted for offline/speed)
+      font-display=swap prevents invisible text while fonts load.
     -->
+    <link rel="preload" href="/fonts/cairo-arabic.woff2" as="font" type="font/woff2" crossorigin />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    
-    <!-- Single Google Fonts API request with all required fonts and weights -->
+
+    <!-- English fonts — Cairo is served locally via @font-face in styles.css -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Geo:ital@0;1&family=Homenaje&family=Work+Sans:wght@300;400;500&family=Cairo:wght@300;400;500;600&display=block"
+      href="https://fonts.googleapis.com/css2?family=Geo:ital@0;1&family=Homenaje&family=Work+Sans:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
 

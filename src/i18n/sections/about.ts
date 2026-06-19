@@ -1,4 +1,4 @@
-﻿export const aboutEN = {
+export const aboutEN = {
   eyebrow: "About",
   title: "Backend depth, full-stack reach.",
   body: [
@@ -6,7 +6,7 @@
   ],
   stats: [
     { value: "4+", label: "Years of experience" },
-    { value: "35+", label: "Projects shipped" },
+    { value: "35+", label: "Projects delivered" },
     { value: "300%", label: "Throughput gain at Erra Soft" },
   ],
 };
@@ -15,11 +15,11 @@ export const aboutAR = {
   eyebrow: "نبذة",
   title: "عمق في الـ Backend، وامتداد Full-Stack.",
   body: [
-    "أهتم بالجودة من البداية إلى النهاية — من Clean Architecture وأمان OAuth 2.0 على الخادم، إلى تغطية E2E بـ Playwright وCypress على العميل. حقّقت زيادة 300% في أداء النظام عبر التخزين المؤقت وضبط الاستعلامات، وأُبقي الإنتاج موثوقاً بـ Docker وKubernetes وأنابيب Azure DevOps CI/CD.",
+    "بهتم بالجودة من أول ما نبدأ لحد ما ننتهي — من Clean Architecture وأمان OAuth 2.0 على الخادم، لحد تغطية E2E بـ Playwright وCypress على العميل. رفعت أداء النظام 300% عن طريق التخزين المؤقت وضبط الاستعلامات، وبحافظ على الـ production موثوق بـ Docker وKubernetes وأنابيب Azure DevOps CI/CD.",
   ],
   stats: [
-    { value: "+٤", label: "سنوات خبرة" },
-    { value: "+٣٥", label: "مشروع مُنجَز" },
+    { value: "٤+", label: "سنين خبرة" },
+    { value: "٣٥+", label: "مشروع منجَز" },
     { value: "٣٠٠٪", label: "تحسّن الأداء في Erra Soft" },
   ],
 };

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FONTS, COLORS, EASE } from "@/styles/theme";
+import { FONTS, COLORS, EASE, BORDERS } from "@/styles/theme";
 
 const chipContainer = {
   hidden: {},
@@ -32,7 +32,7 @@ export function HeroStack({ techs }: HeroStackProps) {
         <motion.span
           key={tech}
           variants={chipItem}
-          className={`inline-flex items-center rounded-full border border-border/60 bg-card/40 px-3 py-1 ${FONTS.labelXs} ${COLORS.textMuted} backdrop-blur-sm`}
+          className={`inline-flex items-center ${BORDERS.roundedFull} border border-border/60 bg-card/40 px-3 py-1 ${FONTS.labelXs} ${COLORS.textMuted} backdrop-blur-sm`}
         >
           {tech}
         </motion.span>

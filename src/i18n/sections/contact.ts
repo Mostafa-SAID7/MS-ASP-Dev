@@ -1,7 +1,7 @@
 export const contactEN = {
   eyebrow: "Contact",
   title: "Tell me about the system.",
-  lede: "I take on a handful of engagements each year — usually greenfield ASP.NET Core systems or rescues of struggling .NET codebases. Send a short note about what you're building, your current stack, and a realistic timeline.",
+  lede: "I take on a handful of projects each year — usually greenfield ASP.NET Core systems or rescues of struggling .NET codebases. Send a short note about what you're building, your current stack, and a realistic timeline.",
   name: "Your name",
   email: "Email",
   message: "What are you building? What's the stack today?",
@@ -16,16 +16,16 @@ export const contactEN = {
 
 export const contactAR = {
   eyebrow: "تواصل",
-  title: "حدّثني عن النظام.",
-  lede: "أعمل على حفنة من الارتباطات سنوياً — عادةً أنظمة ‎ASP.NET Core‎ جديدة، أو إنقاذ قواعد كود ‎.NET‎ متعثّرة. اكتب لي عن مشروعك، والمنصّة الحالية، ومدى زمنه الواقعي.",
+  title: "حدّثني عن مشروعك.",
+  lede: "بشتغل على عدد محدود من المشاريع كل سنة — غالباً أنظمة ASP.NET Core جديدة، أو إنقاذ قواعد كود .NET متعثّرة. ابعتلي رسالة قصيرة عن اللي بتبنيه، والـ stack الحالي، والـ timeline المتوقع.",
   name: "اسمك",
   email: "البريد الإلكتروني",
-  message: "ماذا تبني؟ وما المنصّة الحالية؟",
+  message: "بتبني إيه؟ وإيه الـ stack اللي شغّال عليه؟",
   send: "إرسال",
   sending: "جارٍ الإرسال…",
-  sent: "شكراً — سأردّ خلال يومَي عمل.",
-  error: "حدث خطأ. أعد المحاولة أو راسلني مباشرة.",
-  direct: "أو راسل مباشرة:",
+  sent: "تمام! هردّ عليك خلال يومَي عمل.",
+  error: "فيه مشكلة. حاول تاني أو راسلني مباشرة.",
+  direct: "أو راسلني على:",
   emailAddress: "m.ssaid356@gmail.com",
   phoneNumber: "+201067358073",
 };

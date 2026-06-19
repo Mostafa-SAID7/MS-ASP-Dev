@@ -5,7 +5,7 @@ import { FONTS, COLORS } from "@/styles/theme";
 export function Footer() {
   const t = useT();
   return (
-    <footer className="border-t border-border/40 mt-32">
+    <footer className="border-t border-border/40 mt-12">
       <div className="mx-auto max-w-7xl px-6 py-16 md:px-10">
         <div className="grid gap-12 md:grid-cols-12">
           <div className="md:col-span-6">

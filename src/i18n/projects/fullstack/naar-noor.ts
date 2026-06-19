@@ -8,6 +8,7 @@ export const naarNoorEN = {
   body: "A polished restaurant landing page with online reservation and menu capabilities. Angular frontend consumes an ASP.NET Core API structured on Clean Architecture. EF Core manages SQL Server for reservations and menu data. Designed for fast load times and a premium dining brand feel.",
   liveUrl: "https://naar-noor.vercel.app",
   imageUrl: "/projects/fullstack/Naar-Noor.png",
+  tags: ["Angular", "TypeScript", "ASP.NET Core", "SQL Server", "Clean Architecture"],
 };
 
 export const naarNoorAR = {
@@ -20,4 +21,5 @@ export const naarNoorAR = {
   body: "صفحة هبوط مطعم مصقولة مع قدرات الحجز عبر الإنترنت والقائمة. تستهلك واجهة أمامية Angular واجهة برمجية ASP.NET Core منظمة على Clean Architecture. يُدير EF Core SQL Server للحجوزات وبيانات القائمة. مصمّمة لأوقات تحميل سريعة وشعور العلامة التجارية لتناول الطعام الفاخر.",
   liveUrl: "https://naar-noor.vercel.app",
   imageUrl: "/projects/fullstack/Naar-Noor.png",
+  tags: ["Angular", "TypeScript", "ASP.NET Core", "SQL Server", "Clean Architecture"],
 };

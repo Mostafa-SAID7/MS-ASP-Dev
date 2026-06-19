@@ -1,6 +1,6 @@
 import { Suspense, lazy, useRef, Component, type ReactNode } from "react";
 import { motion, useMotionValue, useTransform, useSpring } from "framer-motion";
-import { FONTS, COLORS, EASE } from "@/styles/theme";
+import { FONTS, COLORS, EASE, BORDERS } from "@/styles/theme";
 import { useReducedMotion } from "@/hooks/use-reduced-motion";
 
 class ThreeErrorBoundary extends Component<
@@ -59,16 +59,6 @@ export function HeroPhoto({
 
   return (
     <>
-      {/* Three.js background */}
-      {!reduced && (
-        <div className="pointer-events-none absolute inset-0 -z-10 opacity-50">
-          <ThreeErrorBoundary>
-            <Suspense fallback={null}>
-              <InkParticles />
-            </Suspense>
-          </ThreeErrorBoundary>
-        </div>
-      )}
       {/* Bottom fade */}
       <div className="pointer-events-none absolute inset-x-0 bottom-0 -z-10 h-2/3 bg-gradient-to-t from-background via-background/60 to-transparent" />
 
@@ -78,7 +68,7 @@ export function HeroPhoto({
         style={{ rotateX, rotateY, transformStyle: "preserve-3d" }}
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
-        className="group relative aspect-[4/5] w-full overflow-hidden rounded-2xl bg-card/40 cursor-default"
+        className={`group relative aspect-[4/5] w-full overflow-hidden ${BORDERS.rounded2xl} bg-card/40 cursor-default`}
       >
         <img
           src="/MS.jpg"
@@ -95,7 +85,7 @@ export function HeroPhoto({
           <p className={`${FONTS.displaySm} ${COLORS.textBase}`}>
             {hoverTitle}
           </p>
-          <div className={`h-px w-12 bg-foreground/30`} />
+          <div className="h-px w-12 bg-foreground/30" />
           <p className={`${FONTS.bodyXs} ${COLORS.textMuted}`}>
             {hoverSubtitle}
           </p>

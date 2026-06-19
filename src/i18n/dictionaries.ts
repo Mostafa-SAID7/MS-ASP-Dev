@@ -12,6 +12,7 @@ import { experienceEN, experienceAR } from "./sections/experience";
 import { educationEN, educationAR } from "./sections/education";
 import { contactEN, contactAR } from "./sections/contact";
 import { projectEN, projectAR } from "./sections/project";
+import { pricingEN, pricingAR } from "./sections/pricing";
 
 export const en = {
   ...uiEN,
@@ -29,6 +30,7 @@ export const en = {
   education: educationEN,
   contact: contactEN,
   project: projectEN,
+  pricing: pricingEN,
 };
 
 export const ar = {
@@ -47,6 +49,7 @@ export const ar = {
   education: educationAR,
   contact: contactAR,
   project: projectAR,
+  pricing: pricingAR,
 };
 
 export type Dictionary = typeof en;

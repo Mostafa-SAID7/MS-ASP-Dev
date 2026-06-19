@@ -1,3 +1,4 @@
+import { Suspense, lazy, Component, type ReactNode } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import {
   Outlet,
@@ -10,6 +11,39 @@ import { useHydratePreferences } from "../store/preferences";
 import { AppLoader } from "@/components/ui/AppLoader";
 import { ScrollProgress } from "@/components/ui/ScrollProgress";
 import { FONTS, COLORS, COMPONENTS, EASE } from "@/styles/theme";
+import { useReducedMotion } from "@/hooks/use-reduced-motion";
+
+class ThreeErrorBoundary extends Component<
+  { children: ReactNode },
+  { failed: boolean }
+> {
+  constructor(props: { children: ReactNode }) {
+    super(props);
+    this.state = { failed: false };
+  }
+  static getDerivedStateFromError() {
+    return { failed: true };
+  }
+  render() {
+    return this.state.failed ? null : this.props.children;
+  }
+}
+
+const InkParticles = lazy(() => import("@/components/three/InkParticles"));
+
+function FixedBackground() {
+  const reduced = useReducedMotion();
+  if (reduced) return null;
+  return (
+    <div className="pointer-events-none fixed inset-0 -z-10 opacity-30">
+      <ThreeErrorBoundary>
+        <Suspense fallback={null}>
+          <InkParticles />
+        </Suspense>
+      </ThreeErrorBoundary>
+    </div>
+  );
+}
 
 /* ─────────────────────────────────────────
    404 — Paper & Ink animated not-found
@@ -204,6 +238,7 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
+      <FixedBackground />
       <AppLoader />
       <ScrollProgress />
 

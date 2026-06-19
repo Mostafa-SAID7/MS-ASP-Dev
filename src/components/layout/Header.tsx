@@ -2,11 +2,11 @@ import { useEffect, useState } from "react";
 import { Menu, X, Download } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useT } from "@/i18n/useT";
-import { FONTS, COLORS, COMPONENTS } from "@/styles/theme";
+import { FONTS, COLORS, COMPONENTS, BORDERS } from "@/styles/theme";
 import { ThemeToggle, LocaleToggle } from "./Toggles";
 import { useActiveSection } from "@/hooks/use-active-section";
 
-const SECTIONS = ["about", "skills", "projects", "experience", "education", "contact"] as const;
+const SECTIONS = ["about", "skills", "projects", "pricing", "experience", "education", "contact"] as const;
 
 export function Header() {
   const t = useT();
@@ -27,15 +27,11 @@ export function Header() {
   }, [open]);
 
   return (
-    <header
-      className={[
-        "fixed inset-x-0 top-2 z-50 px-4 md:px-6 transition-all duration-300",
-      ].join(" ")}
-    >
-      {/* Pill container — floats above the page */}
+    <header className="fixed inset-x-0 top-2 z-50 px-3 sm:px-4 md:px-6 transition-all duration-300">
+      {/* Pill container */}
       <div
         className={[
-          "mx-auto flex max-w-7xl items-center justify-between gap-6 rounded-2xl px-5 py-3 transition-all duration-500",
+          `mx-auto flex max-w-7xl items-center justify-between gap-4 sm:gap-6 ${BORDERS.rounded2xl} px-4 sm:px-5 py-3 transition-all duration-500`,
           scrolled
             ? "border border-border/50 bg-background/85 backdrop-blur-xl shadow-lg shadow-foreground/5"
             : "border border-transparent bg-transparent",
@@ -64,7 +60,6 @@ export function Header() {
               ].join(" ")}
             >
               {t.nav[id]}
-              {/* Animated underline that tracks the active section */}
               <motion.span
                 className="absolute -bottom-1 start-0 h-px bg-foreground"
                 initial={false}
@@ -89,7 +84,7 @@ export function Header() {
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
-          className="inline-flex size-10 items-center justify-center rounded-full border border-border/60 transition hover:border-foreground/40 md:hidden"
+          className={`inline-flex size-10 items-center justify-center ${BORDERS.roundedFull} border border-border/60 transition hover:border-foreground/40 md:hidden`}
           aria-label={t.nav.menu}
           aria-expanded={open}
         >
@@ -107,7 +102,7 @@ export function Header() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -12, scale: 0.97 }}
             transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
-            className={`fixed inset-0 top-[72px] z-40 flex flex-col gap-2 ${COLORS.bgMobileMenu} backdrop-blur-md px-6 py-8 md:hidden border-t border-border/40 overflow-y-auto`}
+            className={`fixed inset-0 top-[72px] z-40 flex flex-col gap-2 ${COLORS.bgMobileMenu} backdrop-blur-md px-4 sm:px-6 py-8 md:hidden border-t border-border/40 overflow-y-auto`}
           >
             <div className="space-y-1">
               {SECTIONS.map((id, i) => (
