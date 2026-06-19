@@ -6,6 +6,7 @@ export const taskManagementApiEN = {
   year: "2023",
   role: "Backend Engineer",
   body: "A task and project scheduling REST API covering task creation, assignment, priority, deadlines, and status tracking. Built on ASP.NET Core with Clean Architecture and CQRS. EF Core manages SQL Server; Swagger exposes all endpoints to frontend clients.",
+  tags: ["ASP.NET Core", "REST API", "CQRS", "SQL Server", "Clean Architecture"],
 };
 
 export const taskManagementApiAR = {
@@ -16,4 +17,5 @@ export const taskManagementApiAR = {
   year: "٢٠٢٣",
   role: "مهندس Backend",
   body: "واجهة برمجية للمهام والجدولة تغطي إنشاء المهام والتخصيص والأولوية والمواعيد النهائية وتتبع الحالة. مبنية على ASP.NET Core مع Clean Architecture وCQRS. يُدير EF Core SQL Server؛ توفّر Swagger جميع نقاط النهاية لعملاء الواجهة الأمامية.",
+  tags: ["ASP.NET Core", "REST API", "CQRS", "SQL Server", "Clean Architecture"],
 };

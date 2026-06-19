@@ -10,3 +10,4 @@ export { experienceEN, experienceAR } from "./experience";
 export { educationEN, educationAR } from "./education";
 export { contactEN, contactAR } from "./contact";
 export { projectEN, projectAR } from "./project";
+export { pricingEN, pricingAR } from "./pricing";

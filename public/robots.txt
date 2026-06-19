@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: /sitemap.xml
+# Replace with your actual deployed domain before going live
+Sitemap: https://mostafa-samir.dev/sitemap.xml

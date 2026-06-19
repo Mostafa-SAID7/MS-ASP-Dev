@@ -6,6 +6,7 @@ export const bookingMicroservicesEN = {
   year: "2025",
   role: "Architect · Backend",
   body: "A microservices-based booking platform decomposed into independent services — availability, reservation, payment, and notification. Each service owns its own database and communicates via async messaging. Clean Architecture within each service; EF Core for relational persistence.",
+  tags: ["ASP.NET Core", "Microservices", "SQL Server", "Clean Architecture", "EF Core"],
 };
 
 export const bookingMicroservicesAR = {
@@ -16,4 +17,5 @@ export const bookingMicroservicesAR = {
   year: "٢٠٢٥",
   role: "مهندس معماري · Backend",
   body: "منصة حجز قائمة على الخدمات الدقيقة مقسمة إلى خدمات مستقلة — التوفر والحجز والدفع والإشعارات. تمتلك كل خدمة قاعدة بيانات الخاصة بها وتتواصل عبر المراسلة غير المتزامنة. Clean Architecture ضمن كل خدمة؛ EF Core للاستمرارية الارتباطية.",
+  tags: ["ASP.NET Core", "Microservices", "SQL Server", "Clean Architecture", "EF Core"],
 };

@@ -3,7 +3,7 @@ import { FONTS, COLORS } from "@/styles/theme";
 
 export function SectionLabel({ eyebrow, title }: { eyebrow: string; title: string }) {
   return (
-    <div className="mb-16 grid gap-6 md:grid-cols-12 md:items-end">
+    <div className="mb-10 grid gap-4 md:grid-cols-12 md:items-end">
       <motion.p
         initial={{ opacity: 0, y: 8 }}
         whileInView={{ opacity: 1, y: 0 }}

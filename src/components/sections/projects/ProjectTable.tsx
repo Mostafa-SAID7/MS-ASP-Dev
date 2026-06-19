@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowUpRight } from "lucide-react";
-import { COLORS, FONTS, COMPONENTS } from "@/styles/theme";
+import { COLORS, FONTS, COMPONENTS, BORDERS } from "@/styles/theme";
 import { ProjectThumbnail } from "@/components/ui/ProjectThumbnail";
 import { Project } from "./types";
 
@@ -37,7 +37,7 @@ export function ProjectTable({ items, onRowClick }: ProjectTableProps) {
                 category={p.category}
                 slug={`modal-${p.slug}`}
                 imageUrl={p.imageUrl}
-                className="size-10 rounded-lg flex-shrink-0"
+                className={`size-10 ${BORDERS.roundedLg} flex-shrink-0`}
               />
             </td>
 
@@ -47,10 +47,7 @@ export function ProjectTable({ items, onRowClick }: ProjectTableProps) {
               {p.tags && p.tags.length > 0 && (
                 <div className="mt-1 flex flex-wrap gap-1">
                   {p.tags.slice(0, 2).map((tag) => (
-                    <span
-                      key={tag}
-                      className="inline-flex rounded border border-border/40 bg-card/30 px-1.5 py-px text-[9px] font-medium text-muted-foreground uppercase"
-                    >
+                    <span key={tag} className={COMPONENTS.tagChipSm}>
                       {tag}
                     </span>
                   ))}
@@ -70,9 +67,7 @@ export function ProjectTable({ items, onRowClick }: ProjectTableProps) {
 
             {/* Category badge */}
             <td className="hidden px-4 py-3 md:table-cell">
-              <span
-                className={`inline-flex rounded-full border border-border/60 bg-card/40 px-2.5 py-1 ${FONTS.labelXs}`}
-              >
+              <span className={COMPONENTS.categoryPillLg}>
                 {p.category}
               </span>
             </td>
@@ -90,7 +85,7 @@ export function ProjectTable({ items, onRowClick }: ProjectTableProps) {
                 to="/projects/$slug"
                 params={{ slug: p.slug }}
                 onClick={onRowClick}
-                className={`inline-flex items-center gap-1 ${FONTS.labelXs} ${COLORS.textMuted} transition hover:${COLORS.textBase}`}
+                className={`inline-flex items-center gap-1 ${FONTS.labelXs} ${COLORS.textMuted} transition hover:text-foreground`}
               >
                 Open <ArrowUpRight className="size-3" />
               </Link>

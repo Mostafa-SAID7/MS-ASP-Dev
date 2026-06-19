@@ -45,7 +45,7 @@ export function Projects() {
         <SectionLabel eyebrow={t.projects.eyebrow} title={t.projects.title} />
 
         {/* Filter pills */}
-        <div className="mb-12">
+        <div className="mb-8">
           <ProjectFilter
             pills={filterPills}
             active={active}
