@@ -13,6 +13,7 @@ export interface Project {
   body: string;
   tags?: string[];
   imageUrl?: string;
+  liveUrl?: string;
 }
 
 export type { Project as ProjectType };

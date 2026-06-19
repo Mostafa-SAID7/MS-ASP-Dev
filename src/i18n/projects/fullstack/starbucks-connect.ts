@@ -6,6 +6,8 @@ export const starbucksConnectEN = {
   year: "2024",
   role: "Full-Stack Engineer",
   body: "A café community and ordering platform extending the Starbucks theme with social and connection features. React frontend, ASP.NET Core Clean Architecture backend, EF Core on SQL Server. Covers user profiles, social feeds, and integrated ordering workflows.",
+  liveUrl: "https://caf-connect.netlify.app",
+  imageUrl: "/projects/fullstack/Starbucks-Connect.png",
 };
 
 export const starbucksConnectAR = {
@@ -16,4 +18,6 @@ export const starbucksConnectAR = {
   year: "٢٠٢٤",
   role: "مهندس Full-Stack",
   body: "منصة مجتمع وطلب كافيه تمدّد موضوع Starbucks بميزات اجتماعية واتصال. واجهة أمامية React، خلفية Clean Architecture من ASP.NET Core، EF Core على SQL Server. تغطي ملفات المستخدم والتغذيات الاجتماعية وسير العمل المتكامل للطلب.",
+  liveUrl: "https://caf-connect.netlify.app",
+  imageUrl: "/projects/fullstack/Starbucks-Connect.png",
 };
